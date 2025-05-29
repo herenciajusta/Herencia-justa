@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Herencia Justa</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(to bottom, #0d1b2a, #0a0a0a);
+      color: #f4f4f4;
+    }
+    header {
+      background-color: #0d1b2a;
+      text-align: center;
+      padding: 3rem 1rem 2rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    }
+    header img {
+      width: 160px;
+      border-radius: 12px;
+      margin-bottom: 1rem;
+    }
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      color: #d4af37;
+      letter-spacing: 1px;
+    }
+    section {
+      max-width: 960px;
+      margin: 3rem auto;
+      padding: 0 1.5rem;
+    }
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #60a561;
+      font-family: 'Playfair Display', serif;
+    }
+    p {
+      font-size: 1.15rem;
+      line-height: 1.6;
+      color: #ddd;
+    }
+    .noticias {
+      background-color: #121212;
+      border-left: 4px solid #60a561;
+      padding: 1.5rem;
+      margin-top: 2rem;
+    }
+    .noticias article {
+      margin-bottom: 1.5rem;
+    }
+    .noticias article h3 {
+      font-size: 1.4rem;
+      color: #d4af37;
+      margin-bottom: 0.5rem;
+    }
+    .noticias article p {
+      font-size: 1rem;
+      color: #ccc;
+    }
+    .oferta {
+      margin-top: 2rem;
+      background-color: #1c1c1c;
+      padding: 1.5rem;
+      border-radius: 8px;
+      border: 1px solid #2d2d2d;
+    }
+    .formulario {
+      margin-top: 3rem;
+      background-color: #121212;
+      padding: 1.5rem;
+      border-left: 4px solid #60a561;
+    }
+    .formulario label {
+      display: block;
+      margin: 1rem 0 0.3rem;
+      color: #ccc;
+    }
+    .formulario input, .formulario textarea {
+      width: 100%;
+      padding: 0.5rem;
+      border: none;
+      border-radius: 4px;
+      margin-bottom: 1rem;
+    }
+    .formulario button {
+      background-color: #60a561;
+      color: white;
+      padding: 0.6rem 1.2rem;
+      border: none;
+      border-radius: 4px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .contacto {
+      margin-top: 2rem;
+      background-color: #0d1b2a;
+      padding: 1rem;
+      border-left: 4px solid #d4af37;
+    }
+    .contacto a {
+      color: #d4af37;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .disclaimer {
+      font-size: 0.9rem;
+      text-align: center;
+      padding: 2rem;
+      color: #888;
+      border-top: 1px solid #333;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      background-color: #060606;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="logo-herencia.png" alt="Logo Herencia Justa">
+    <h1>Herencia Justa</h1>
+  </header>
+
+  
+  <section class="vision">
+    <h2>¿Quiénes Somos?</h2>
+    <p>
+      Herencia Justa es una propuesta política ciudadana, joven, libre e independiente.
+      Nace con el propósito de visibilizar las realidades sociales del Ecuador y promover una reflexión profunda desde la juventud sobre el presente y el futuro del país.
+      No representamos a ningún movimiento político registrado, pero sí a una generación con voz, fuerza y visión.
+    </p>
+  </section>
+  <section class="oferta">
+
+    <h2>Publica con Nosotros</h2>
+    <p>
+      ¿Tienes una opinión poderosa sobre la política de tu ciudad o del país? En Herencia Justa abrimos un espacio gratuito para publicar artículos bien escritos,
+      argumentados y coherentes que generen impacto y conversación. Esta es tu tribuna. <strong>Si deseas que tu artículo sea publicado, envíalo directamente a <a href="mailto:herenciajusta@gmail.com">herenciajusta@gmail.com</a></strong>.
+    </p>
+  </section>
+
+  <section class="noticias">
+    <h2>Noticias y Opinión</h2>
+    <article>
+      <h3>¿Qué pasa con la participación juvenil en la política local?</h3>
+      <p>
+        La juventud está despertando. Cada vez más jóvenes participan activamente en asambleas, debates y movimientos ciudadanos que buscan cambios reales...
+      </p>
+    </article>
+    <article>
+      <h3>Presupuesto Municipal 2025: ¿justicia o desigualdad?</h3>
+      <p>
+        Analizamos cómo se están distribuyendo los recursos públicos y qué sectores han sido beneficiados o ignorados por el nuevo plan presupuestario...
+      </p>
+    </article>
+  </section>
+
+  
+  <section class="noticias">
+    <h2>Noticias y Temas Relevantes</h2>
+    <article>
+      <h3>¿Qué pasa con la participación juvenil en la política local?</h3>
+      <p>
+        La juventud está despertando. Cada vez más jóvenes participan activamente en asambleas, debates y movimientos ciudadanos que buscan cambios reales...
+      </p>
+    </article>
+    <article>
+      <h3>Presupuesto Municipal 2025: ¿justicia o desigualdad?</h3>
+      <p>
+        Analizamos cómo se están distribuyendo los recursos públicos y qué sectores han sido beneficiados o ignorados por el nuevo plan presupuestario...
+      </p>
+    </article>
+  </section>
+  <section class="formulario">
+
+    <h2>Recomienda un Tema o Haz una Pregunta</h2>
+    <form action="https://formsubmit.co/herenciajusta@gmail.com" method="POST">
+      <label for="nombre">Tu nombre (opcional):</label>
+      <input type="text" id="nombre" name="nombre">
+      
+      <label for="ciudad">Ciudad o provincia:</label>
+      <input type="text" id="ciudad" name="ciudad" required>
+      
+      <label for="tema">Tu recomendación o pregunta:</label>
+      <textarea id="tema" name="tema" rows="5" required></textarea>
+      
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <section class="contacto">
+    <h2>Contáctanos</h2>
+    <p>¿Quieres unirte al proyecto o saber más? Escríbenos a: <a href="mailto:herenciajusta@gmail.com">herenciajusta@gmail.com</a></p>
+  </section>
+
+  <div class="disclaimer">
+    <p><em>Herencia Justa es una propuesta ciudadana e iniciativa juvenil de reflexión política. No representa a un movimiento político registrado ante el Consejo Nacional Electoral.</em></p>
+  </div>
+
+  <footer>
+    &copy; 2025 Herencia Justa. Todos los derechos reservados.
+  </footer>
+
+</body>
+</html>
